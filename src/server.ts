@@ -24,11 +24,11 @@ const PORT = process.env.PORT || 4000;
 initialize()
   .then(() => {
     app.listen(PORT, () => {
-      console.log(`✅ Server running on http://localhost:${PORT}`);
-      console.log(`🔑 Test with: POST /users with { email, password, ... }`);
+      console.log(`Server running on http://localhost:${PORT}`);
+      console.log(`Test with: POST /users with { email, password, ... }`);
     });
   })
   .catch((err) => {
-    console.error('❌ Failed to initialize database:', err);
+    console.error('Failed to initialize database:', err);
     process.exit(1);
   });

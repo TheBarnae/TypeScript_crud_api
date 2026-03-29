@@ -27,5 +27,5 @@ export async function initialize(): Promise<void> {
   // Sync models with database
   await sequelize.sync({ alter: true });
 
-  console.log('✅ Database initialized and models synced');
+  console.log('Database initialized and models synced');
 }
